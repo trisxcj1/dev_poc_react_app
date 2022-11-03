@@ -1,0 +1,342 @@
+/* --------------------- Standard custom css --------------------- */
+body {
+    font-family: 'Nunito';
+    letter-spacing: 0.0625em;
+    word-wrap: break-word;
+    font-size: 1.5em;
+}
+
+a {
+    color: black;
+}
+
+h6 {
+  font-size: .9em;
+  color: rgba(0, 0, 0, .4);
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, .4);
+  font-weight: 700;
+}
+
+/* --------------------- Portfolio custom css --------------------- */
+.portfolio-section {
+    padding: 10rem 0;
+  }
+  
+  .portfolio-section .featured-text {
+    padding: 2rem;
+  }
+  
+  @media (min-width: 992px) {
+    .portfolio-section .featured-text {
+      padding: 0 0 0 2rem;
+      border-left: 0.5rem solid #64a19d;
+    }
+  }
+  
+  .portfolio-section .portfolio-text {
+    padding: 3rem;
+    font-size: 90%;
+  }
+  
+  @media (min-width: 992px) {
+    .portfolio-section .portfolio-text {
+      padding: 5rem;
+    }
+    .portfolio-section .portfolio-text hr {
+      border-color: #64a19d;
+      border-width: .25rem;
+      width: 30%;
+    }
+  }
+
+/* --------------------- DEV custom css --------------------- */
+
+.custom-section-container {
+  margin-top: 10%;
+  padding-top: 100px;
+}
+
+.custom-careers-section-container {
+  padding-top: 100px;
+}
+
+
+.custom-section-header {
+  color: rgba(0,0,0,.6);
+}
+
+.custom-scroller-div {
+  text-align: center;
+}
+
+/* --------------------- DEV custom css: Opportunity --------------------- */
+
+.custom-opportunity-section-container {
+  padding-top: 100px;
+}
+
+.custom-opportunity-section-container h5 {
+  font-size: 1em;
+  font-weight: 700;
+  color: rgba(0,0,0, .4);
+}
+
+.custom-opportunity-section-container p {
+  font-size: .8em;
+  font-weight: 10000;
+  color: rgba(0,0,0, .8)
+}
+
+.custom-opportunity-section-container li {
+  font-size: .8em;
+  font-weight: 500;
+  color: rgba(0,0,0, .8)
+}
+
+
+.custom-company-detail-sections {
+  
+}
+
+.custom-create-form-div {
+  margin: 20px 0px;
+}
+
+.custom-create-form-label {
+  font-size: 1em;
+}
+
+
+/* --------------------- DEV custom css: company --------------------- */
+
+.custom-company-card-title {
+  font-size: .90em;
+}
+
+.custom-company-card-content {
+  font-size: .77em;
+  margin: 0px 10px;
+  color:gray;
+}
+
+.custom-company-card-dim-content {
+  font-size: .60em;
+  margin: 7px 7px;
+  color:lightgray;
+}
+
+.custom-company-card {
+  padding: 10px 10px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgba(0,0,0,.1);
+  margin: 5px 0px;
+  background-color: rgba(0, 0, 0, .01);
+}
+
+.custom-company-card p, li, ul {
+  color: rgba(0,0,0,.777);
+}
+
+.custom-company-card:hover {
+  background-color: white;
+  /* transform: scale(1.02); */
+  transition: transform .1s;
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, .5) */
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+
+.custom-field-name {
+  color: rgba(28, 123, 101, 1);
+  font-size: .7em;
+  margin-left: 5px;
+  margin-top: 5px;
+  /* text-decoration: underline; */
+  font-weight: 100;
+}
+
+
+.custom-navbar {
+  background-color: black;
+}
+
+.custom-btn {
+  background-color: rgba(28, 123, 101, .6);
+}
+
+.custom-footer {
+  margin-top: 5%;
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: grey;
+  text-align: center;
+}
+
+.custom-tooltip {
+  color:'rgba(0, 0, 0, 0.7)';
+  margin-bottom: 15px;
+}
+
+.custom-tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+}
+
+.custom-tooltip:hover .tooltiptext {
+  visibility: visible;
+  color: lightgray;
+}
+
+
+/* TOGGLE BUTTON */
+
+.react-toggle {
+  touch-action: pan-x;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-toggle-screenreader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.react-toggle--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.react-toggle-track {
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  border-radius: 30px;
+  background-color: #4D4D4D;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: #000000;
+}
+
+.react-toggle--checked .react-toggle-track {
+  background-color: #59c6c1;
+}
+
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: #59c6c1;
+}
+
+.react-toggle-track-check {
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  top: 0px;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  left: 8px;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.react-toggle--checked .react-toggle-track-check {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.react-toggle-track-x {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0px;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  right: 10px;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.react-toggle--checked .react-toggle-track-x {
+  opacity: 0;
+}
+
+.react-toggle-thumb {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #4D4D4D;
+  border-radius: 50%;
+  background-color: #FAFAFA;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+  left: 27px;
+  border-color: #24515d;
+}
+
+.react-toggle--focus .react-toggle-thumb {
+  -webkit-box-shadow: 0px 0px 3px 2px #24515d;
+  -moz-box-shadow: 0px 0px 3px 2px #24515d;
+  box-shadow: 0px 0px 2px 3px #24515d;
+}
+
+.react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
+  -webkit-box-shadow: 0px 0px 5px 5px #24515d;
+  -moz-box-shadow: 0px 0px 5px 5px #24515d;
+  box-shadow: 0px 0px 5px 5px #24515d;
+}
